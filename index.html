@@ -4,54 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple e Steve Jobs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <h1>Apple & Steve Jobs</h1>
-    <nav>
-        <a href="#apple">Apple</a>
-        <a href="#steve">Steve Jobs</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#curiosidades">Curiosidades</a>
-    </nav>
+
+    <header id="topo">
+        <div class="header-inner">
+            <span class="logo">Steve Jobs</span>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="navMenu">
+                <a href="#apple">Apple</a>
+                <a href="#steve">Steve Jobs</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#curiosidades">Curiosidades</a>
+            </nav>
+        </div>
     </header>
 
     <section class="banner">
-        <h2>"A inovação destingue um líder de um seguidor."</h2>
-        <p> -Steve Jobs</p>
+        <div class="banner-content">
+            <img
+                class="hero-photo"
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Jobs_Headshot_2010-CROP2.jpg"
+                alt="Retrato de Steve Jobs">
+            <p class="eyebrow">1955 — 2011</p>
+            <h2 id="quoteText">"A inovação distingue um líder de um seguidor."</h2>
+            <p class="quote-author">— Steve Jobs</p>
+        </div>
+        <div class="scroll-hint">role para saber mais ↓</div>
     </section>
 
-    <section id="apple">
-        <h2>Sobre a Apple</h2>
+    <section id="apple" class="reveal">
+        <h2><span class="tag">01</span> Sobre a Apple</h2>
         <p>
-            A Apple é uma das maiores empresas de tecnologia do mundo.
-            Foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayner.
-            A empresa revolucionou diversos mercados, como computadores, smartphones, tablets, relógios inteligentes e serviços digitais.
+            A Apple Inc. é uma das maiores empresas de tecnologia do mundo.
+            Foi fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, em uma
+            garagem em Los Altos, na Califórnia.
         </p>
-    </section>
-
-    <section id="steve">
-        <h2> Quem foi Steve Jobs</h2>
         <p>
-            Steve Jobs nasceu em 1955, nos Estados Unidos.
-            Foi um empreendedor visionário responsável por transformar a Apple 
-            em uma das empresas mais valiosas do mundo.
-        </p>
-
-        <p> 
-            Seu foco em inovação, simplicidade e design fez surgir produtos 
-            revolucionários como o iPhone, iPad, iPod e MacBook.
+            A empresa revolucionou diversos mercados, como computadores pessoais,
+            smartphones, tablets, relógios inteligentes e serviços digitais, sempre
+            unindo tecnologia de ponta a um design simples e elegante.
         </p>
     </section>
-        <section id="produtos">
-            <h2> Principais Produtos</h2>
-            <div class="cards">
-                <img src="iphone.jpg" alt="iPhone original de 2007">
-                <h3>iPhone</h3>
-                <p> O smartphones mais famoso do mundo, que reiventou o telefone celular</p>
+
+    <section id="steve" class="reveal alt-bg">
+        <h2><span class="tag">02</span> Quem foi Steve Jobs?</h2>
+        <div class="steve-grid">
+            <figure class="steve-photo">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/SteveJobsMacbookAir.JPG"
+                    alt="Steve Jobs segurando um MacBook Air na Macworld 2008">
+                <figcaption>Macworld 2008, apresentando o MacBook Air</figcaption>
+            </figure>
+            <div>
+                <p>
+                    Steve Jobs nasceu em 1955, em São Francisco, nos Estados Unidos.
+                    Foi um empreendedor visionário responsável por transformar a Apple
+                    em uma das empresas mais valiosas do mundo.
+                </p>
+                <p>
+                    Seu foco em inovação, simplicidade e design fez surgir produtos
+                    revolucionários como o iPhone, o iPad e o MacBook, mudando a forma
+                    como nos relacionamos com a tecnologia.
+                </p>
+                <blockquote class="side-quote">
+                    "Design não é apenas como algo parece. Design é como algo funciona."
+                </blockquote>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section id="produtos" class="reveal">
+        <h2><span class="tag">03</span> Principais Produtos</h2>
+        <p class="section-intro">Alguns dos lançamentos que marcaram a história da Apple.</p>
 
+        <div class="cards">
+            <div class="card">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/IPhone.jpg"
+                    alt="iPhone original de 2007"
+                    class="card-img">
+                <span class="card-year">2007</span>
+                <h3>iPhone</h3>
+                <p>O smartphone mais famoso do mundo, que reinventou o telefone celular.</p>
+            </div>
+            <div class="card">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Macintosh 128K fronte.jpg"
+                    alt="Macintosh 128K, o primeiro Macintosh"
+                    class="card-img">
+                <span class="card-year">1984</span>
+                <h3>Macintosh</h3>
+                <p>O primeiro computador pessoal de sucesso com interface gráfica.</p>
+            </div>
+            <div class="card">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/IPad First Gen.jpg"
+                    alt="iPad de primeira geração"
+                    class="card-img">
+                <span class="card-year">2010</span>
+                <h3>iPad</h3>
+                <p>Criou a categoria moderna dos tablets, entre o notebook e o smartphone.</p>
+            </div>
+            <div class="card">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Apple Watch.jpg"
+                    alt="Apple Watch"
+                    class="card-img">
+                <span class="card-year">2015</span>
+                <h3>Apple Watch</h3>
+                <p>Levou a tecnologia da Apple para o pulso, unindo saúde e conectividade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="reveal">
+        <h2><span class="tag">·</span> Em Imagens</h2>
+        <div class="gallery">
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Jobs_WWDC07.jpg"
+                    alt="Steve Jobs apresentando na WWDC 2007">
+                <figcaption>WWDC 2007</figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Jobs_presents_iPhone.jpg"
+                    alt="Steve Jobs apresentando o primeiro iPhone">
+                <figcaption>Lançamento do primeiro iPhone</figcaption>
+            </figure>
+            <figure>
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Jobs_and_iPhone.jpeg"
+                    alt="Steve Jobs segurando um iPhone">
+                <figcaption>Steve Jobs e o iPhone</figcaption>
+            </figure>
+        </div>
+    </section>
 </body>
 </html>
